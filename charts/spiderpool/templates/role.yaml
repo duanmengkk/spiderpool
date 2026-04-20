@@ -154,7 +154,6 @@ rules:
   - podschedulingcontexts/status
   - resourceclaims
   - resourceclaims/status
-  - resourceclaims/driver
   - resourceclaimtemplates
   - resourceclasses
   verbs:
@@ -163,8 +162,13 @@ rules:
   - patch
   - update
   - watch
-  - "associated-node:update"
+- apiGroups:
+  - resource.k8s.io
+  resources:
+  - resourceclaims/driver
+  verbs:
   - "associated-node:patch"
+  - "associated-node:update"
 - apiGroups:
   - spiderpool.spidernet.io
   resources:

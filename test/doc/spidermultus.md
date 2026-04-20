@@ -36,3 +36,5 @@
 | M00033  |    test the multusConfig with mtu size for macvlan                                            | p3       |       | done   |       |
 | M00034  |    test the multusConfig with mtu size for ipvlan                                             | p3       |       | done   |       |
 | M00035  |    test the multusConfig with mtu size for sriov                                             | p3       |       | done   |       |
+| M00036  | Pod with multi-NIC compact JSON k8s.v1.cni.cncf.io/networks annotation (name/namespace/interface fields) should be parsed correctly and get IPs allocated on both interfaces | p2       |       | done   |       |
+| M00037  | Pod with pretty-printed JSON k8s.v1.cni.cncf.io/networks annotation (multi-line indented array) should be parsed correctly and get IP allocated | p2       |       | done   |       |
